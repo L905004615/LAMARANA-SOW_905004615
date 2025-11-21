@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matches - Football Agency Sierra Leone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Football Agency Sierra Leone</div>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="players.html">Players</a>
+                <a href="matches.html">Matches</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Matches Section -->
+    <section class="matches-section">
+        <div class="matches-header">
+            <h1>Matches</h1>
+            <p><a href="#fixtures">Fixtures</a> | <a href="#results">Results</a> & <a href="#statistics">Match Statistics</a></p>
+        </div>
+
+        <!-- Filter Options -->
+        <div class="matches-filters">
+            <div class="filter-buttons">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Upcoming</button>
+                <button class="filter-btn">Fixtures</button>
+                <button class="filter-btn">Play-Offs</button>
+                <button class="filter-btn">Last Months</button>
+            </div>
+
+            <div class="filter-inputs">
+                <input type="text" placeholder="Filter by Team" class="filter-input">
+                <select class="filter-select">
+                    <option>Filter By Status</option>
+                    <option>Upcoming</option>
+                    <option>Completed</option>
+                    <option>Cancelled</option>
+                </select>
+                <select class="filter-select">
+                    <option>Sort Date</option>
+                    <option>Newest First</option>
+                    <option>Oldest First</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Upcoming Fixtures Section -->
+        <div class="matches-container">
+            <h2 class="section-subtitle">Upcoming Fixtures</h2>
+
+            <!-- Match Card 1 -->
+            <div class="match-card upcoming">
+                <div class="match-date">
+                    <i class="icon-calendar"></i> March 23, 2025
+                    <span class="match-badge">National Stadium</span>
+                </div>
+                <div class="match-content">
+                    <div class="team team-home">
+                        <div class="team-logo">
+                            <img src="lo1.png" alt="Sierra Leone U-23">
+                        </div>
+                        <h3>Sierra Leone U-23</h3>
+                        <p class="team-info">Lineup: League - Team (3)</p>
+                    </div>
+                    <div class="match-vs">
+                        <span>VS</span>
+                    </div>
+                    <div class="team team-away">
+                        <div class="team-logo">
+                            <img src="lo2.jpg" alt="Ghana U-23">
+                        </div>
+                        <h3>Ghana U-23</h3>
+                        <p class="team-info">Lineup: League - Team (1)</p>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <button class="btn btn-dark">View Details</button>
+                    <button class="btn btn-outline">Add to Calendar</button>
+                </div>
+            </div>
+
+            <!-- Match Card 2 -->
+            <div class="match-card upcoming">
+                <div class="match-date">
+                    <i class="icon-calendar"></i> March 25, 2025
+                    <span class="match-badge">Cairo Stadium</span>
+                </div>
+                <div class="match-content">
+                    <div class="team team-home">
+                        <div class="team-logo">
+                            <img src="F1.jpg" alt="FC Kallon">
+                        </div>
+                        <h3>FC Kallon</h3>
+                        <p class="team-info">Location: Africa - League - Team: 15 (0-4M)</p>
+                    </div>
+                    <div class="match-vs">
+                        <span>VS</span>
+                    </div>
+                    <div class="team team-away">
+                        <div class="team-logo">
+                            <img src="F2.jpg" alt="FC Johansen">
+                        </div>
+                        <h3>FC Johansen</h3>
+                        <p class="team-info">Location: Europe - League - Team</p>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <button class="btn btn-dark">View Details</button>
+                    <button class="btn btn-outline">Add to Calendar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Results Section -->
+        <div class="matches-container">
+            <h2 class="section-subtitle">Recent Results</h2>
+
+            <!-- Result Card 1 -->
+            <div class="match-card result">
+                <div class="match-date">
+                    <i class="icon-calendar"></i> March 15, 2025
+                    <span class="match-badge">National Stadium</span>
+                </div>
+                <div class="match-content">
+                    <div class="team team-home">
+                        <div class="team-logo">
+                            <img src="lo1.png" alt="Sierra Leone">
+                        </div>
+                        <h3>Sierra Leone</h3>
+                        <p class="team-info">Goals: Kamara (23') | Mensah (27')</p>
+                    </div>
+                    <div class="match-score">
+                        <span class="score">2-1</span>
+                    </div>
+                    <div class="team team-away">
+                        <div class="team-logo">
+                            <img src="lo2.jpg" alt="Ghana">
+                        </div>
+                        <h3>Ghana</h3>
+                        <p class="team-info">Goals: Ayew (45')</p>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <button class="btn btn-dark">Match Report</button>
+                    <button class="btn btn-outline">Highlights</button>
+                    <button class="btn btn-outline">Player Stats</button>
+                </div>
+            </div>
+
+            <!-- Result Card 2 -->
+            <div class="match-card result">
+                <div class="match-date">
+                    <i class="icon-calendar"></i> March 10, 2025
+                    <span class="match-badge">Cairo Stadium</span>
+                </div>
+                <div class="match-content">
+                    <div class="team team-home">
+                        <div class="team-logo">
+                            <img src="F1.jpg" alt="FC Kallon">
+                        </div>
+                        <h3>FC Kallon</h3>
+                        <p class="team-info">Goals: Sesay (7') | Conteh (45') | Bangura (87')</p>
+                    </div>
+                    <div class="match-score">
+                        <span class="score">3-0</span>
+                    </div>
+                    <div class="team team-away">
+                        <div class="team-logo">
+                            <img src="P01.jpg" alt="Porto Authority">
+                        </div>
+                        <h3>Porto Authority</h3>
+                        <p class="team-info">Goals: None</p>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <button class="btn btn-dark">Match Report</button>
+                    <button class="btn btn-outline">Highlights</button>
+                    <button class="btn btn-outline">Player Stats</button>
+                </div>
+            </div>
+
+            <!-- Result Card 3 -->
+            <div class="match-card result">
+                <div class="match-date">
+                    <i class="icon-calendar"></i> March 5, 2025
+                    <span class="match-badge">No location</span>
+                </div>
+                <div class="match-content">
+                    <div class="team team-home">
+                        <div class="team-logo">
+                            <img src="lo1.png" alt="Sierra Leone">
+                        </div>
+                        <h3>Sierra Leone</h3>
+                        <p class="team-info">Goals: None</p>
+                    </div>
+                    <div class="match-score">
+                        <span class="score">0-1</span>
+                    </div>
+                    <div class="team team-away">
+                        <div class="team-logo">
+                            <img src="sl1.png" alt="Senegal">
+                        </div>
+                        <h3>Senegal</h3>
+                        <p class="team-info">Goals: Ba (34')</p>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <button class="btn btn-dark">Match Report</button>
+                    <button class="btn btn-outline">Highlights</button>
+                    <button class="btn btn-outline">Player Stats</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Season Statistics Section -->
+        <div class="season-stats">
+            <h2 class="section-subtitle">Season Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Matches Played</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Wins</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Draws</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Losses</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">24</div>
+                    <div class="stat-label">Goals For</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Goals Against</div>
+                </div>
+            </div>
+            <div class="stats-actions">
+                <button class="btn btn-dark">View Full Statistics</button>
+                <button class="btn btn-outline">Download Report</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: <a href="mailto:info@footballagencysl.com">info@footballagencysl.com</a></p>
+                <p>Phone: <a href="tel:+232XXXXXXX">+232-XXXX-XXXX</a></p>
+                <p>Address: Freetown, Sierra Leone</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="my.html">Our Players</a></li>
+                    <li><a href="matches.html">Matches</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="#facebook">Facebook</a>
+            <a href="#twitter">Twitter</a>
+            <a href="#instagram">Instagram</a>
+            <a href="#linkedin">LinkedIn</a>
+        </div>
+        <div class="copyright">
+            © 2025 Football Agency Sierra Leone. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

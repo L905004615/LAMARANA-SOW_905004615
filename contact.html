@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Agency Sierra Leone - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #000;
+            background: #f5f5f5;
+        }
+
+        .wireframe {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: purple;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background: purple;
+            color: #000;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #000;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav a {
+            color: #000;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid #000;
+            background: #fff;
+            border-radius: 3px;
+        }
+
+        .hero-section {
+            background: #fff;
+            padding: 3rem 2rem;
+            text-align: center;
+            color: #000;
+            border-bottom: 2px solid #000;
+        }
+
+        .hero-section h1 {
+            color: #000;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-section p {
+            color: #666;
+            font-size: 1.2rem;
+        }
+
+        .hero-image {
+            width: 200px;
+            height: 150px;
+            background: #ccc;
+            margin: 2rem auto;
+            border-radius: 10px;
+            border: 2px solid #000;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            padding: 3rem 2rem;
+        }
+
+        .contact-info {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid #000;
+        }
+
+        .contact-info h2 {
+            color: #000;
+            margin-bottom: 2rem;
+            border-bottom: 3px solid #000;
+            padding-bottom: 0.5rem;
+        }
+
+        .info-section {
+            margin-bottom: 2rem;
+        }
+
+        .info-section h3 {
+            color: #000;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .info-section p {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-section a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .office-hours {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            border: 1px solid #000;
+            margin-top: 1rem;
+        }
+
+        .emergency-contact {
+            background: #000;
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .contact-form {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid #000;
+        }
+
+        .contact-form h2 {
+            color: #000;
+            margin-bottom: 2rem;
+            border-bottom: 3px solid #000;
+            padding-bottom: 0.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #000;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .required {
+            color: #000;
+        }
+
+        .submit-btn {
+            background: #000;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background: #666;
+        }
+
+        .social-section {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid #000;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .social-section h3 {
+            color: #000;
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: white;
+            border: 1px solid #000;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #000;
+            transition: all 0.3s;
+        }
+
+        .social-link:hover {
+            background: #000;
+            color: white;
+        }
+
+        .map-section {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid #000;
+            margin: 2rem 0;
+        }
+
+        .map-section h3 {
+            color: #000;
+            margin-bottom: 1rem;
+        }
+
+        .map-placeholder {
+            width: 100%;
+            height: 300px;
+            background: #ccc;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            border: 1px solid #000;
+        }
+
+        .map-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .map-btn {
+            padding: 0.5rem 1rem;
+            background: #000;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+
+        .quick-contact {
+            background: #000;
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .quick-contact h3 {
+            color: white;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .quick-contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .quick-contact-item {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .quick-contact-item:hover {
+            background: #666;
+        }
+
+        .quick-contact-item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .quick-contact-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-section {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid #000;
+            margin: 2rem 0;
+        }
+
+        .faq-section h3 {
+            color: #000;
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-answer {
+            color: #666;
+        }
+
+        .view-all-faq {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .view-all-faq a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer {
+            background: pink;
+            color: #000;
+            padding: 2rem;
+            text-align: center;
+            border-top: 2px solid #000;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .footer-social-links a {
+            color: #000;
+            text-decoration: none;
+            padding: 0.5rem;
+            border: 1px solid #000;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .map-actions {
+                flex-direction: column;
+            }
+
+            .quick-contact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wireframe">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">Football Agency Sierra Leone</div>
+            <nav class="nav">
+                <a href="home.html">Home</a>
+                <a href="players.html">Players</a>
+                <a href="matches.html">Matches</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1>Contact Us</h1>
+            <p>Get in Touch with Our Team</p>
+            <div class="hero-image"></div>
+        </section>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+
+                <div class="info-section">
+                    <h3>📍 Address</h3>
+                    <p><strong>Football Agency Sierra Leone</strong></p>
+                    <p>123 Wilkinson Road</p>
+                    <p>Freetown, Sierra Leone</p>
+                    <p>West Africa</p>
+                </div>
+
+                <div class="info-section">
+                    <h3>📞 Phone Numbers</h3>
+                    <p><strong>Office:</strong> <a href="tel:+232-XXX-XXXX">+232-XXX-XXXX</a></p>
+                    <p><strong>Mobile:</strong> <a href="tel:+232-XXX-XXXX">+232-XXX-XXXX</a></p>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/232XXXXXXXX">+232-XXX-XXXX</a></p>
+                </div>
+
+                <div class="info-section">
+                    <h3>📧 Email Addresses</h3>
+                    <p><strong>General:</strong> <a href="mailto:info@footballagency.sl">info@footballagency.sl</a></p>
+                    <p><strong>Players:</strong> <a
+                            href="mailto:players@footballagency.sl">players@footballagency.sl</a></p>
+                    <p><strong>Partnerships:</strong> <a
+                            href="mailto:partners@footballagency.sl">partners@footballagency.sl</a></p>
+                </div>
+
+                <div class="office-hours">
+                    <h3>🕒 Office Hours</h3>
+                    <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</p>
+                    <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
+                    <p><strong>Sunday:</strong> Closed</p>
+                </div>
+
+                <div class="emergency-contact">
+                    <h3>🚨 Emergency Contact</h3>
+                    <p><strong>24/7 Hotline:</strong> <a href="tel:+232-XXX-XXXX"
+                            style="color: white;">+232-XXX-XXXX</a></p>
+                    <p><small>Available for urgent matters only</small></p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="fullName">Full Name <span class="required">*</span></label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject <span class="required">*</span></label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="player-inquiry">Player Inquiry</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="general">General Question</option>
+                            <option value="media">Media Inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" placeholder="Please provide details about your inquiry..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Social Media Section -->
+        <section class="social-section">
+            <h3>Follow Us Online</h3>
+            <p>Stay updated with our latest news, player updates, and match highlights on social media.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <span>📘</span>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="social-link">
+                    <span>🐦</span>
+                    <span>Twitter</span>
+                </a>
+                <a href="#" class="social-link">
+                    <span>📷</span>
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="social-link">
+                    <span>💼</span>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="#" class="social-link">
+                    <span>📺</span>
+                    <span>YouTube</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <h3>Find Us</h3>
+            <div class="map-placeholder">
+                [Google Maps Integration]
+            </div>
+            <p style="text-align: center; margin-bottom: 1rem;">
+                📍 123 Wilkinson Road, Freetown, Sierra Leone
+            </p>
+            <div class="map-actions">
+                <a href="#" class="map-btn">Get Directions</a>
+                <a href="#" class="map-btn">View Larger Map</a>
+            </div>
+        </section>
+
+        <!-- Quick Contact -->
+        <section class="quick-contact">
+            <h3>Quick Contact</h3>
+            <div class="quick-contact-grid">
+                <a href="tel:+232-XXX-XXXX" class="quick-contact-item">
+                    <div class="quick-contact-icon">📞</div>
+                    <div>Call Us</div>
+                </a>
+                <a href="mailto:info@footballagency.sl" class="quick-contact-item">
+                    <div class="quick-contact-icon">📧</div>
+                    <div>Email Us</div>
+                </a>
+                <a href="#" class="quick-contact-item">
+                    <div class="quick-contact-icon">💬</div>
+                    <div>Chat Live</div>
+                </a>
+                <a href="#" class="quick-contact-item">
+                    <div class="quick-contact-icon">🏢</div>
+                    <div>Visit Us</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h3>Frequently Asked Questions</h3>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: How do I become a player with your agency?</div>
+                <div class="faq-answer">A: Contact us through our form or call our office. We'll schedule an evaluation
+                    session to assess your potential and discuss representation opportunities.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: What services do you provide?</div>
+                <div class="faq-answer">A: We provide player representation, contract negotiations, transfer
+                    facilitation, career development guidance, and international exposure opportunities.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Do you work with international clubs?</div>
+                <div class="faq-answer">A: Yes, we have partnerships with clubs in Europe, Asia, and other African
+                    countries, facilitating international transfers for our players.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: What age groups do you represent?</div>
+                <div class="faq-answer">A: We represent players from youth level (16+) to senior professionals, with
+                    specialized programs for different age groups.</div>
+            </div>
+
+            <div class="view-all-faq">
+                <a href="#">View All FAQs</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div>
+                    <h3>Contact Info</h3>
+                    <p>Email: info@footballagency.sl</p>
+                    <p>Phone: +232-XXX-XXXX</p>
+                    <p>Address: Freetown, Sierra Leone</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <p><a href="#players" style="color: #000;">Our Players</a></p>
+                    <p><a href="#matches" style="color: #000;">Matches</a></p>
+                    <p><a href="#about" style="color: #000;">About Us</a></p>
+                </div>
+            </div>
+            <div class="footer-social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">
+                © 2024 Football Agency Sierra Leone. All rights reserved.
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
